@@ -1,6 +1,10 @@
+// Developer: Ramprasath R
+// Project: Crypto Market Research App
+// Module: Application Entry Point
+
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'presentation/screens/main_navigation_screen.dart';
+import 'presentation/screens/splash_screen.dart';
 import 'presentation/theme/app_theme.dart';
 
 void main() {
@@ -18,10 +22,10 @@ class CryptoApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Crypto Research App',
+      title: 'Crypto Vault',
       debugShowCheckedModeBanner: false,
       theme: AppTheme.darkTheme,
-      home: const MainNavigationScreen(),
+      home: const SplashScreen(),
     );
   }
 }

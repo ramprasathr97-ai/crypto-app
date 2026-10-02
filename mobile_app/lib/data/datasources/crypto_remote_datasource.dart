@@ -15,7 +15,8 @@ class CryptoRemoteDataSource {
 
   /// Base URL for the Node.js API server
   /// Set to local IP address so physical mobile devices and web apps connect cleanly.
-  static const String baseUrl = 'http://192.168.1.17:3000/api';
+  static const String baseUrl = 'https://26p48b80-3000.inc1.devtunnels.ms/api';
+  
 
   CryptoRemoteDataSource({http.Client? client})
       : client = client ?? http.Client();
